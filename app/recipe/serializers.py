@@ -42,7 +42,8 @@ class RecipeSerializer(serializers.ModelSerializer):
     def _get_or_create_tags(self, tags, recipe):
         """
         Handle getting or creating tags as needed.
-        _ : the function also returns a boolean to tell if the object was created or not.
+        _ : the function also returns a boolean to tell if the object
+          was created or not.
         We use the _ because we don't any use for it
         """
         auth_user = self.context["request"].user
